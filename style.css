@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero */
+.hero {
+    background: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.years {
+    opacity: 0.8;
+}
+
+/* About */
+.about {
+    padding: 50px 0;
+    background: white;
+}
+
+.about .container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    color: #1a365d;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+/* Qualities */
+.qualities {
+    padding: 50px 0;
+    background: #edf2f7;
+}
+
+.qualities h2 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: #2d3748;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Quote */
+.quote {
+    padding: 50px 20px;
+    background: #2b6cb0;
+    color: white;
+    text-align: center;
+}
+
+.quote blockquote {
+    font-size: 1.4rem;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto 15px;
+}
+
+/* Achievements */
+.achievements {
+    padding: 50px 0;
+    background: white;
+}
+
+.achievements h2 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    list-style: none;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.timeline li {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.year {
+    background: #e53e3e;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* Footer */
+footer {
+    background: #1a202c;
+    color: #aaa;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.small {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline li {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
